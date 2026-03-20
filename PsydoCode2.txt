@@ -6,8 +6,10 @@ def min_boats(people, limit):
     right = len(people) - 1
     boats = 0
 
-    while left <= right:
+    if people[right] > limit:
+        return -1
 
+    while left <= right:
         if people[left] + people[right] <= limit:
             left = left + 1
 
