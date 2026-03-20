@@ -17,7 +17,7 @@ def shortest_path(grid, start, target):
 
     while queue is not empty:
 
-        x, y, dist = queue.pop()
+        x, y, dist = queue.popleft()
 
         if (x, y) == (tx, ty):
             return dist
