@@ -72,7 +72,7 @@ int main() {
     std::pair<int, int> target1 = {5, 5};
     int steps1 = shortest_path(sample1, start1, target1);
 
-    std::cout << steps1 << std::endl;
+    std::cout << "Sample 1: " << steps1 << std::endl;
 
     std::vector<std::vector<int>> sample2 = {{0, 0, 0, 1, 0, 0},
                                              {1, 1, 0, 1, 0, 1},
@@ -83,6 +83,6 @@ int main() {
     std::pair<int, int> start2 = {0, 0};
     std::pair<int, int> target2 = {5, 5};
     int steps2 = shortest_path(sample2, start2, target2);
-    std::cout << steps2 << std::endl;
+    std::cout << "Sample 2: " << steps2 << std::endl;
     return 0;
 }
