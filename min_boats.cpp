@@ -6,7 +6,10 @@
 using namespace std;
 
 int min_boats(vector<int>& people, const int& limit) {
-    // For a vector
+    if (people.empty()) {
+        return 0;
+    }
+    
     sort(people.begin(), people.end()); // Sorts in ascending order by default
     int left = 0;
     int right = people.size() - 1;
